@@ -28,6 +28,7 @@ const Tables = () => {
     }),
   };
 
+  // Selct Option
   const select_options = [
     { value: '10', label: '10' },
     { value: '50', label: '50' },
@@ -40,6 +41,7 @@ const Tables = () => {
     { value: '400', label: '400' },
   ];
 
+  // Columns Data
   const columns = [
     {
       title: 'Invoice#',
@@ -52,6 +54,7 @@ const Tables = () => {
     {
       title: 'Created',
       dataIndex: 'created',
+      className: 'g_date',
       sorter: {
         compare: (a, b) => a.created - b.created,
         multiple: 3,
@@ -81,6 +84,7 @@ const Tables = () => {
     {
       title: 'Due',
       dataIndex: 'due',
+      className: 'g_date',
       sorter: {
         compare: (a, b) => a.due - b.due,
         multiple: 1,
@@ -114,6 +118,7 @@ const Tables = () => {
     },
   ];
 
+   // Table List
   const data = [
     {
       key: '1',
@@ -123,7 +128,7 @@ const Tables = () => {
       customer: 'Gunther Beard',
       due: '20 May 2018',
       service: 'Graphic Designer',
-      total: '$142 000',
+      total: '$142000',
     },
     {
       key: '2',
@@ -133,7 +138,7 @@ const Tables = () => {
       customer: 'Lingui',
       due: '28 May 2018',
       service: 'UI/UX Designer',
-      total: '$122 000',
+      total: '$122000',
     },
     {
       key: '3',
@@ -143,7 +148,7 @@ const Tables = () => {
       customer: 'Pelican Steve',
       due: '10 Jun 2018',
       service: 'Accountant',
-      total: '$158 000',
+      total: '$158000',
     },
     {
       key: '4',
@@ -153,7 +158,7 @@ const Tables = () => {
       customer: 'Inverness McKenzie',
       due: '17 Jul 2018',
       service: 'Web Designer',
-      total: '$82 000',
+      total: '$82000',
     },
     {
       key: '5',
@@ -163,7 +168,7 @@ const Tables = () => {
       customer: 'Gustav Purpleson',
       due: '19 Jul 2018',
       service: 'UX Designer',
-      total: '$118 000',
+      total: '$118000',
     },
     {
       key: '6',
@@ -173,7 +178,7 @@ const Tables = () => {
       customer: 'Eleanor Fant',
       due: '23 Jul 2018',
       service: 'construction Building',
-      total: '$192 000',
+      total: '$192000',
     },
     {
       key: '7',
@@ -183,7 +188,7 @@ const Tables = () => {
       customer: 'Fleece Marigold',
       due: '30 Aug 2018',
       service: 'Accountant',
-      total: '$98 000',
+      total: '$98000',
     },
     {
       key: '8',
@@ -193,7 +198,7 @@ const Tables = () => {
       customer: 'Lance Bogrol',
       due: '17 Sep 2018',
       service: 'Art Designer',
-      total: '$82 000',
+      total: '$82000',
     },
     {
       key: '9',
@@ -203,7 +208,7 @@ const Tables = () => {
       customer: 'Alan Fresco',
       due: '02 Oct 2018',
       service: 'UI Designer',
-      total: '$148 000',
+      total: '$148000',
     },
     {
       key: '10',
@@ -213,18 +218,8 @@ const Tables = () => {
       customer: 'Spruce Springclean',
       due: '09 Oct 2018',
       service: 'CEO',
-      total: '$82 000',
-    },
-    {
-      key: '11',
-      invoice: 'Invoice #',
-      created: 'Created',
-      status: 'Status',
-      customer: 'Customer',
-      due: 'Due',
-      service: 'Service',
-      total: 'Total',
-    },
+      total: '$82000',
+    }
   ];
 
   return (

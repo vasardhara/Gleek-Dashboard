@@ -4,10 +4,33 @@
 
     // Tables Css
     .ant-table {
+        -thead {
+            > tr {
+                > th {
+                    color: $g_title;
+                    background-color: $g_white;
+                }
+            }
+        }
         &-tbody {
             > tr.ant-table-row-selected {
                 > td {
                     @include backgroundOpacity($g_primary, $opacity: 0.1);
+                }
+            }
+            tr {
+                &:nth-child(odd) {
+                    background: $g_white;
+                }
+                &:nth-child(even) {
+                    background: $g_tbgcolor;
+                }
+                td {
+                    color: $g_font;
+
+                    &.g_date {
+                        color: $g_gray;
+                    }
                 }
             }
         }
@@ -19,6 +42,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            &:hover {
+                a {
+                    color: $g_primary;
+                }
+                border-color: $g_primary;
+            }
+
+            &-active {
+                border-color: $g_primary;
+                a {
+                    color: $g_primary;
+                }
+            }
+        }
+        &-prev,
+        &-next {
+            &:hover {
+                .ant-pagination-item-link {
+                    color: $g_primary;
+                    border-color: $g_primary;
+                }
+            }
         }
     }
 

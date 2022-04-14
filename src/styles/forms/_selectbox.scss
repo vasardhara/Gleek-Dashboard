@@ -3,10 +3,10 @@ body {
     .g_select {
         @include defaultFontStyle(400, 14, 18, $g_title);
         color: $g_title;
-        max-width: 150px;
+        max-width: 120px;
 
         &__control {
-            min-width: 150px;
+            min-width: 120px;
             box-shadow: none;
             border: 1px solid $g_lightborder;
             &--is-focused {
