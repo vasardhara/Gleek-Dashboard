@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Black.woff2') format('woff2'),
+      url('../fonts/CircularStd-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+      url('../fonts/CircularStd-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+      url('../fonts/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+      url('../fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+// Common Title and Link Css
+h1 {
+  @include defaultFontStyle(bold, 36, 38, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  @include defaultFontStyle(bold, 24, 26, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+h3 {
+  @include defaultFontStyle(bold, 20, 22, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+h4 {
+  @include defaultFontStyle(600, 20, 22, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+h5 {
+  @include defaultFontStyle(bold, 18, 20, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+h6 {
+  @include defaultFontStyle(bold, 16, 18, $g_title);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  @include defaultFontStyle(500, 16, 18, $g_font);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  @include defaultFontStyle(400, 14, 16, $g_gray);
+  -moz-font-smoothing: none;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,31 @@
+/* color variables  */
+$g_white: #ffffff;
+$g_black: #000000;
+$g_grayblack: #000000;
+$g_bg: #f3f6f9;
+
+/* font color */
+$g_title: #464A53;
+$g_font: #6A707E; 
+$g_gray: #ABAFB3;
+$g_lightgray: #DDDFE1;
+$g_icon: #AAAAAA;
+$g_lightercolor: #F0F0F0;
+
+/* for dashboard UI colors */
+$g_primary: #7f63f4;
+$g_pastelred: #dc3545;
+
+/* border color */
+$g_lightborder: #dddfe1;
+$g_grayborder: #D9D9D9;
+
+// Responsive View variables - Breakpoints for Media Query
+$smallMobile: 320px;
+$mobileSmall: 375px;
+$mobile: 481px;
+$mobileLarge: 576px;
+$ipad: 768px;
+$large: 991px;
+$extraLarge: 1024px;
+$desktop: 1366px;

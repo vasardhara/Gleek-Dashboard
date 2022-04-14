@@ -1,0 +1,52 @@
+// Datepicker CSS
+.g_datepicker {
+    .ant-picker {
+        &:hover,
+        &-focused {
+            border-color: $g_primary;
+            box-shadow: none;
+            border-radius: 5px;
+        }
+
+        &-active-bar {
+            background: $g_primary;
+        }
+
+        &-input {
+            > input {
+                @include defaultFontStyle(400, 15, 26, $g_font);
+            }
+        }
+    }
+}
+
+// Datepicker Popup CSS
+body {
+    .ant-picker {
+        &-cell-in-view {
+            &.ant-picker-cell-in-range {
+                &::before {
+                    @include backgroundOpacity($g_primary, $opacity: 0.1);
+                }
+                &-hover {
+                    &::before {
+                        @include backgroundOpacity($g_primary, $opacity: 0.1);
+                    }
+                }
+            }
+            &.ant-picker-cell-range-end,
+            &.ant-picker-cell-range-start {
+                .ant-picker-cell-inner {
+                    background: $g_primary;
+                }
+            }
+        }
+        &-cell-today {
+            .ant-picker-cell-inner {
+                &::before {
+                    border-color: $g_primary !important;
+                }
+            }
+        }
+    }
+}

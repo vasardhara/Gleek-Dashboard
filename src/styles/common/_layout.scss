@@ -1,0 +1,25 @@
+// Layout CSS
+.g_layout {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+
+    &-list {
+        height: calc(100vh - 200px);
+        overflow-y: inherit;
+        background-color: $g_white;
+        margin: 20px;
+        @include box-shadow; 
+        padding: 20px;
+    }
+
+    footer {
+        height: 50px;
+        background-color: $g_white;
+        @include defaultFontStyle(400, 14, 16, $g_icon);
+        a {
+            color: $g_primary;
+        }
+    }
+}

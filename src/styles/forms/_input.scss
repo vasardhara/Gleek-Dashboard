@@ -1,0 +1,36 @@
+// Input CSS
+.g_input-common {
+    .g_input {
+        width: 100%;
+        background-color: $g_bg;
+        padding: 18px 20px 18px 40px;
+        border: none;
+        position: relative;
+        border-radius: 5px;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        @include defaultFontStyle(400, 15, 16, $g_icon);
+        &-btn {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            @include defaultFontStyle(500, 16, 0, $g_icon);
+        }
+    }
+    &-small {
+        .g_input {
+            width: 100%;
+            background-color: $g_white;
+            padding: 10px 40px 10px 0px;
+            border-bottom: 1px solid $g_lightgray;
+            border-radius: 0;
+            &-btn {
+                right: 10px;
+                left: auto;
+                top: 50%;
+                color: $g_title;
+            }
+        }
+    }
+}

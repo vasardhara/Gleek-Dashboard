@@ -1,0 +1,69 @@
+// Tables
+.g_table {
+    width: 100%;
+
+    // Tables Css
+    .ant-table {
+        &-tbody {
+            > tr.ant-table-row-selected {
+                > td {
+                    @include backgroundOpacity($g_primary, $opacity: 0.1);
+                }
+            }
+        }
+    }
+
+    // Tables Pagination
+    .ant-pagination {
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .ant-table-pagination {
+        .ant-pagination {
+            margin: 15px 0 0;
+        }
+    }
+
+    // Tables Checkbox
+    .ant-checkbox {
+        &-checked {
+            .ant-checkbox-inner {
+                background-color: $g_primary;
+                border-color: $g_primary;
+            }
+            &:after {
+                border-color: $g_primary;
+            }
+        }
+        &:hover {
+            .ant-checkbox-inner {
+                border-color: $g_primary;
+            }
+        }
+
+        &-input {
+            &:focus {
+                + .ant-checkbox-inner {
+                    border-color: $g_primary;
+                }
+            }
+        }
+
+        &-indeterminate {
+            .ant-checkbox-inner {
+                &::after {
+                    background-color: $g_primary;
+                }
+            }
+            &:hover {
+                .ant-checkbox-inner {
+                    border-color: $g_primary;
+                }
+            }
+        }
+    }
+}

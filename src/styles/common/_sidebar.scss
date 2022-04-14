@@ -1,0 +1,69 @@
+// Sidebar CSS
+.g_left-sidebar {
+    background: $g_white;
+    transition: all 0.1s ease-out;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        background-color: $g_primary;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+
+        i {
+            @include defaultFontStyle(500, 28, 32, $g_white);
+        }
+    }
+
+    &-menubar {
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+        label {
+            padding: 10px 20px 10px 40px;
+            @include defaultFontStyle(700, 14, 18, $g_gray);
+            border-top: 1px solid $g_gray;
+            margin-top: 15px;
+            text-transform: capitalize;
+            &:first-child {
+                border-top: none;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .g_menu {
+        a {
+            padding: 15px 20px 15px 40px;
+            @include defaultFontStyle(400, 16, 20, $g_font);
+            text-transform: capitalize;
+            @include transition(all 0.5s);
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+                color: $g_icon;
+                @include transition(all 0.5s);
+            }
+
+            &:hover, &.active {
+                @include transition(all 0.5s);
+                color: $g_primary;
+                @include backgroundOpacity($g_primary, $opacity: 0.1);
+                i {
+                    @include transition(all 0.5s);
+                    color: $g_primary;
+                }
+            }
+        }
+        &:last-child {
+            a {
+                border-top: 1px solid $g_gray;
+                margin-top: 15px;
+            }
+        }
+    }
+}

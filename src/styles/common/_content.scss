@@ -1,0 +1,106 @@
+// Content CSS
+.g_content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 320px);
+    &-header {
+        background-color: $g_white;
+        height: 100px;
+
+        &-left {
+            .g_input-common {
+                min-width: 354px;
+            }
+        }
+
+        &-right {
+            .g_user-box {
+                margin-left: 20px;
+                &-img {
+                    @include square(50px);
+                    border: 3px solid $g_grayborder;
+                    border-radius: 100%;
+                }
+                &-info {
+                    @include defaultFontStyle(400, 16, 20, $g_font);
+                    margin-left: 10px;
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .g_toolbar-header {
+        @include backgroundOpacity($g_primary, $opacity: 0.1);
+        height: 50px;
+
+        h1 {
+            @include defaultFontStyle(400, 18, 20, $g_primary);
+        }
+
+        ul {
+            li {
+                position: relative;
+                margin-left: 20px;
+                @include defaultFontStyle(400, 14, 18, $g_gray);
+                &::after {
+                    right: 0;
+                    @include content;
+                    content: "-";
+                    right: -15px;
+                    top: 0;
+                    cursor: initial;
+                    @include defaultFontStyle(600, 16, 18, $g_primary);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                &.active {
+                    color: $g_primary;
+                }
+            }
+        }
+    }
+}
+
+//common icon
+.g_common-icon {
+    position: relative;
+    @include defaultFontStyle(400, 28, 26, $g_icon);
+    margin-left: 20px;
+
+    .g_dot {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        border-radius: 100%;
+        border: 2px solid $g_lightercolor;
+        background-color: $g_primary;
+        @include square(14px);
+    }
+    &-menu {
+        color: $g_grayblack;
+    }
+}
+
+// Common title
+.g_common-title {
+    h2 {
+        @include defaultFontStyle(400, 22, 24, $g_title);
+    }
+}
+
+
+
+// Common G Icon
+.g_icon {
+    border: 1px solid $g_pastelred;
+    border-radius: 5px;
+    @include square(38px);
+    background-color: $g_pastelred;
+    @include defaultFontStyle(400, 18, 20, $g_white);
+}

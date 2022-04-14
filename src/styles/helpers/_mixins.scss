@@ -1,0 +1,55 @@
+/* Font Styles */
+@mixin defaultFontStyle( $fontWeight: null, $fontSize: null, $lineHeight: null, $color: null) {
+	font: normal $fontWeight ($fontSize)+px / ($lineHeight)+px 'Circular Std';
+	color: $color;
+}
+
+/* Meadia fonts */
+@mixin mediaFontStyle( $fontSize: null, $lineHeight: null) {
+    font-size: ($fontSize / 10)+rem;
+    line-height: ($lineHeight / 10)+rem; 
+}
+
+/* Background Opacity */
+@mixin backgroundOpacity($bgColor, $opacity: null) {
+	background: rgba($bgColor, $opacity);
+}
+
+/* Box Shadow */
+@mixin box-shadow {
+	box-shadow: 1.5px 2.6px 10px rgba(119, 119, 119, 0.1);
+	border-radius: 5px;
+}
+
+// Transitions
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-ms-transition: $transition;
+	transition: $transition;
+}
+
+/// Width and height 
+@mixin square($pixels: null) {
+	width: $pixels;
+	height: $pixels;
+}
+
+// Media Queries
+@mixin mediaQuery ($point) {
+    @media screen and (max-width:$point) {
+        @content;
+    }
+}
+@mixin minmediaQuery ($point) {
+    @media screen and (min-width:$point) {
+        @content;
+    }
+}
+
+// Content - Before, After
+@mixin content {
+	content: '';
+	position: absolute;
+}

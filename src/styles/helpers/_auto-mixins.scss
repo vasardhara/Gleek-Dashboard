@@ -1,0 +1,71 @@
+
+// Grid box
+@for $i from 1 through 12 {
+	.g_col-#{$i} {
+		flex: 0 0 ($i/12) * 100%;
+		max-width: ($i/12) * 100%;
+		padding: 0 10px;
+	}
+}
+
+// Margin and Padding
+@for $i from 0 through 30 {
+	.g_m-#{$i} {
+		$margin: $i * 1px;
+		margin: $margin;
+	}
+	.g_mt-#{$i} {
+		$margin: $i * 1px;
+		margin-top: $margin;
+	}
+	.g_mr-#{$i} {
+		$margin: $i * 1px;
+		margin-right: $margin;
+	}
+	.g_mb-#{$i} {
+		$margin: $i * 1px;
+		margin-bottom: $margin;
+	}
+	.g_ml-#{$i} {
+		$margin: $i * 1px;
+		margin-left: $margin;
+	}
+	.g_p-#{$i} {
+		$padding: $i * 1px;
+		padding: $padding;
+	}
+	.g_pt-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+	}
+	.g_pr-#{$i} {
+		$padding: $i * 1px;
+		padding-right: $padding;
+	}
+	.g_pb-#{$i} {
+		$padding: $i * 1px;
+		padding-bottom: $padding;
+	}
+	.g_pl-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+	}
+	.g_py-#{$i} {
+		$padding: $i * 1px;
+		padding-top: $padding;
+		padding-bottom: $padding;
+	}
+	.g_px-#{$i} {
+		$padding: $i * 1px;
+		padding-left: $padding;
+		padding-right: $padding;
+	}
+}
+
+// dynamic height
+@for $i from 1 through 50 {
+	$height: $i * 1px;
+	.g_h-#{$i} {
+		height: $height;
+	}
+}
