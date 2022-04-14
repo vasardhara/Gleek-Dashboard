@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
+
+// Select Box
 import Select from 'react-select';
-import { DatePicker, Space, Table, Radio } from 'antd';
+
+// Antd
+import { DatePicker, Space, Table } from 'antd';
+
+// Components
 import Toolbar from '../layout/components/toolbar';
 
 const Tables = () => {
@@ -18,7 +24,6 @@ const Tables = () => {
     },
     getCheckboxProps: (record) => ({
       disabled: record.name === 'Disabled User',
-      // Column configuration not to be checked
       name: record.name,
     }),
   };

@@ -5,6 +5,7 @@ const Sidebar = () => {
     return (
         <React.Fragment>
             <div className="g_left-sidebar">
+                {/* Sidebar Logo */}
                 <div className="g_left-sidebar-header">
                     <Link to="/" className="g_flex">
                         <img src='assets/logo/logo.png' alt="logo" />
@@ -13,6 +14,8 @@ const Sidebar = () => {
                         <i className="ri-tools-fill"></i>
                     </Link>
                 </div>
+
+                {/* Sidebar All Link */}
                 <ul className="g_left-sidebar-menubar">
                     <label className='g_flex'>Navigations</label>
                     <li className="g_menu">
@@ -63,6 +66,7 @@ const Sidebar = () => {
                         <NavLink className="g_flex" to="/"> <i className="ri-shut-down-line"></i>Logout</NavLink>
                     </li>
                 </ul>
+                
             </div>
         </React.Fragment>
     )

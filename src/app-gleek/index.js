@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 
-// import routes
+// Import Components
 import Dashboard from './dashboard';
 import Layout from './layout'
 import Mailbox from './mailbox';

@@ -61,11 +61,3 @@
 		padding-right: $padding;
 	}
 }
-
-// dynamic height
-@for $i from 1 through 50 {
-	$height: $i * 1px;
-	.g_h-#{$i} {
-		height: $height;
-	}
-}

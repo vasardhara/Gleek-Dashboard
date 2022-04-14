@@ -5,6 +5,8 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <div className="g_content-header g_flex g_align-center g_content-between g_px-20">
+
+                {/* Header Left side */}
                 <div className="g_content-header-left">
                     <div className="g_input-common g_relative">
                         <input type="text" className="form-control g_input" placeholder="Search..." />
@@ -12,6 +14,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
+                {/* Header Right side */}
                 <div className="g_content-header-right g_flex g_align-center">
                     <div className="g_common-icon g_flex g_cp">
                         <i className="ri-mail-fill"></i>
@@ -34,6 +37,7 @@ const Navbar = () => {
                         <i className="ri-align-justify"></i>
                     </div>
                 </div>
+
             </div>
         </React.Fragment>
     )

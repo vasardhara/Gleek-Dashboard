@@ -44,11 +44,6 @@
 .g_align-middle {vertical-align: middle;}
 .g_align-bottom {vertical-align: bottom;}
 
-.g_bg-white { background-color: $g_white; }
-
-/* border redius */
-.g_round-radius { border-radius: 50%; }
-
 /* texts */
 .g_text-center { text-align: center; }
 .g_text-left { text-align: left; }
@@ -60,7 +55,7 @@
 .g_ellipse { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* object fit */
-.g_object-contain	{-o-object-fit: contain;object-fit: contain;}
+.g_object-contain {-o-object-fit: contain;object-fit: contain;}
 .g_object-cover {-o-object-fit: cover;object-fit: cover;}
 
 /* overflow */

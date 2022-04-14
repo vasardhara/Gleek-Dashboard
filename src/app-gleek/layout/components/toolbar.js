@@ -12,6 +12,7 @@ const Toolbar = (props) => {
                     <li className="g_cp">{props.sectitle}</li>
                     <li className="g_cp">{props.maintitle}</li>
                 </ul>
+                
             </div>
         </React.Fragment>
     )
