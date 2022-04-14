@@ -96,16 +96,16 @@
 
 // Common G Icon
 .g_icon {
-    border: 1px solid $g_pastelred;
     border-radius: 5px;
     @include square(38px);
-    background-color: $g_pastelred;
+    background-color: $g_gray;
     @include defaultFontStyle(400, 18, 20, $g_white);
     @include transition(all 0.5s);
+    border: none;
 
     &:hover {
         @include transition(all 0.5s);
-        background-color: $g_font;
-        border-color: $g_font;
+        background-color: $g_pastelred;
+        border: none;
     }
 }
