@@ -7,7 +7,7 @@
 
     &-list {
         height: calc(100vh - 200px);
-        overflow-y: inherit;
+        overflow-y: auto;
         background-color: $g_white;
         margin: 20px;
         @include box-shadow;
@@ -18,6 +18,7 @@
         height: 50px;
         background-color: $g_white;
         @include defaultFontStyle(400, 14, 16, $g_icon);
+
         a {
             color: $g_primary;
         }

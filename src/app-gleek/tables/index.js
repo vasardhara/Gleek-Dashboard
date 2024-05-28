@@ -118,7 +118,7 @@ const Tables = () => {
     },
   ];
 
-   // Table List
+  // Table List
   const data = [
     {
       key: '1',
@@ -274,7 +274,7 @@ const Tables = () => {
         </div>
 
         {/* Table */}
-        <Table className="g_table" rowSelection={{ type: selectionType, ...rowSelection, }} columns={columns} dataSource={data} onChange={onChange} bordered scroll={{ y: 450 }} />
+        <Table className="g_table" rowSelection={{ type: selectionType, ...rowSelection, }} columns={columns} dataSource={data} onChange={onChange} bordered />
 
       </div>
     </React.Fragment>
